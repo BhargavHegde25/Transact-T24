@@ -1,0 +1,41 @@
+{
+  "name" : "DemoPackage",
+  "version" : "1.0.0",
+  "description" : "Demo Package",
+  "status" : "DEFINING",
+  "sequence" : [ {
+    "component" : "t24data",
+    "type" : "PGM.FILE"
+  }, {
+    "component" : "t24data",
+    "type" : "FILE.CONTROL"
+  }, {
+    "component" : "t24data",
+    "type" : "STANDARD.SELECTION"
+  }, {
+    "component" : "t24data",
+    "type" : "BATCH.NEW.COMPANY"
+  }, {
+    "component" : "t24data",
+    "type" : "BATCH"
+  }, {
+    "component" : "t24data",
+    "type" : "TSA.SERVICE"
+  }, {
+    "component" : "t24data",
+    "type" : "EB.API"
+  }, {
+    "component" : "t24data",
+    "type" : "LOCAL.TABLE"
+  }, {
+    "component" : "t24data",
+    "type" : "LOCAL.REF.TABLE"
+  }, {
+    "component" : "t24data",
+    "type" : "EB.TABLE.DEFINITION"
+  } ],
+  "dataStructures" : [ {
+    "record" : "t24data.VERSION!CUSTOMER,ADDRESS",
+    "dataStructureName" : "t24data_version"
+  } ]
+}

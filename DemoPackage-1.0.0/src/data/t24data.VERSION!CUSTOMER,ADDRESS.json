@@ -1,0 +1,293 @@
+{
+  "header" : {
+    "id" : "CUSTOMER,ADDRESS",
+    "dsfApiType" : "VERSION",
+    "dsfApiComponent" : "t24data",
+    "dsfApiPhase" : "main",
+    "metadata" : {
+      "installed" : "NO",
+      "release" : "R23"
+    },
+    "ttag" : {
+      "t24" : {
+        "inheritIncludeDetails" : "RETACC*RETLEN*SSRETL*TSBNPL"
+      }
+    }
+  },
+  "body" : {
+    "LANGUAGE.CODE" : [ {
+      "LANGUAGE.CODE" : "1"
+    } ],
+    "FIELDS.PER.LINE" : "MULTI",
+    "AUTOM.FIELD.NO" : [ {
+      "AUTOM.FIELD.NO" : "LANGUAGE",
+      "AUT.NEW.CONTENT" : "1"
+    } ],
+    "FIELD.NO" : [ {
+      "FIELD.NO" : "ADDRESS.COUNTRY",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Address Country"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-32-"
+      } ],
+      "TABLE.LINE" : "0"
+    }, {
+      "FIELD.NO" : "ADDRESS.TYPE",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Address Type"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "0"
+    }, {
+      "DISPLAY.TYPE" : "DROPDOWN.NOINPUT",
+      "FIELD.NO" : "ADDRESS.PURPOSE",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Address Purpose"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-65-"
+      } ],
+      "TABLE.LINE" : "1"
+    }, {
+      "FIELD.NO" : "BUILDING.NAME",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Building Name"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "1"
+    }, {
+      "FIELD.NO" : "BUILDING.NUMBER",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Building No."
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-46-"
+      } ],
+      "TABLE.LINE" : "2"
+    }, {
+      "FIELD.NO" : "STREET-1",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Street"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-100-"
+      } ],
+      "TABLE.LINE" : "2"
+    }, {
+      "FIELD.NO" : "FLAT.NUMBER",
+      "COLUMN" : "1",
+      "TEXT" : [ {
+        "TEXT" : "Flat No."
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-96-"
+      } ],
+      "TABLE.LINE" : "3"
+    }, {
+      "FIELD.NO" : "ADDRESS-1.1",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Address"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "3"
+    }, {
+      "FIELD.NO" : "TOWN.COUNTRY-1",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "2",
+      "TEXT" : [ {
+        "TEXT" : "Town/City"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-64-"
+      } ],
+      "TABLE.LINE" : "4"
+    }, {
+      "FIELD.NO" : "DEPARTMENT",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Department"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-100-"
+      } ],
+      "TABLE.LINE" : "4"
+    }, {
+      "FIELD.NO" : "SUB.DEPARTMENT",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Sub Department"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-100-"
+      } ],
+      "TABLE.LINE" : "5"
+    }, {
+      "FIELD.NO" : "FLOOR",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Floor"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-100-"
+      } ],
+      "TABLE.LINE" : "5"
+    }, {
+      "FIELD.NO" : "POST.CODE-1",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "2",
+      "TEXT" : [ {
+        "TEXT" : " Post Code"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-64-"
+      } ],
+      "TABLE.LINE" : "6"
+    }, {
+      "FIELD.NO" : "TOWN.LOCATION.NAME",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Town Location Name"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "6"
+    }, {
+      "FIELD.NO" : "PO.BOX.NUMBER",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "PoBox No."
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-46-"
+      } ],
+      "TABLE.LINE" : "7"
+    }, {
+      "FIELD.NO" : "DISTRICT.NAME",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "District Name"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "7"
+    }, {
+      "FIELD.NO" : "COUNTRY.SUBDIVISION",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Country Subdivision"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-65-"
+      } ],
+      "TABLE.LINE" : "8"
+    }, {
+      "FIELD.NO" : "COUNTRY-1",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "2",
+      "TEXT" : [ {
+        "TEXT" : "Country"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-64-"
+      } ],
+      "TABLE.LINE" : "8"
+    }, {
+      "FIELD.NO" : "UPDATE.PREV.ADDRESS",
+      "COLUMN" : "1",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Update Prev Address"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-33-"
+      } ],
+      "TABLE.LINE" : "9"
+    }, {
+      "FIELD.NO" : "ADDRESS.VALIDATED.BY",
+      "COLUMN" : "112",
+      "ENRICHM.CHAR" : "3",
+      "TEXT" : [ {
+        "TEXT" : "Address Validated By"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "112-65-"
+      } ],
+      "TABLE.LINE" : "9"
+    }, {
+      "FIELD.NO" : "LANGUAGE",
+      "COLUMN" : "1",
+      "TEXT" : [ {
+        "TEXT" : "Language"
+      } ],
+      "TEXT.CHAR.MAX" : "23",
+      "TABLE.COLUMN" : [ {
+        "TABLE.COLUMN" : "1-28-"
+      } ],
+      "TABLE.LINE" : "10"
+    } ],
+    "REPORT.LOCKS" : "YES",
+    "DESCRIPTION" : [ {
+      "DESCRIPTION" : "Physical Address"
+    } ],
+    "EXC.INC.RTN" : "YES",
+    "NO.OF.AUTH" : "1",
+    "GTS.CONTROL" : "1",
+    "RECORDS.PER.PAGE" : "1",
+    "HDR.1.001..039" : [ {
+      "HDR.1.001..039" : "Physical Address"
+    } ],
+    "MANDATORY.FIELD" : [ {
+      "MANDATORY.FIELD" : "STREET"
+    } ]
+  }
+}
